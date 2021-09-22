@@ -1,0 +1,238 @@
+/* parte principal*/
+body{
+    padding: 0;
+    margin: 0;
+    background: #eeeeee;
+    transition: 1.2s ease all;
+}
+
+body.oscuro{
+    background: rgb(20, 20, 20);
+}
+
+header{
+    position: relative;
+    background: rgb(252, 251, 260);
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+body.oscuro header{
+    background: rgba(49, 49, 49, 0.425);;
+}
+
+body.oscuro .imagen{
+    box-shadow: rgba(212, 219, 146, 0.445) 5px 7px 10px;
+}
+
+.perl{
+    position: absolute;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    margin-left: 85%;
+    margin-top: 10px;
+
+}
+
+.logo{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    margin-left: 80px;
+    margin-top: 5px;;
+    
+}
+
+.historia{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: gray;
+    margin-left: 81%;
+    margin-top: 10px;
+}
+
+body.oscuro .historia{
+    color: rgb(199, 198, 198);
+    background: transparent;
+}
+
+.historia:hover{
+    background: rgba(124, 126, 126, 0.726);
+    color: white;
+}
+
+body.oscuro .historia:hover{
+    background: rgba(23, 70, 141, 0.493); 
+}
+.cambio{
+    position: absolute;
+    margin-left: 89%;
+    margin-top: -40px;
+}
+
+.cambio{
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    
+}
+.cambio::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top:0;
+    left: 0;
+    right: unset;
+    border-radius: 100px; 
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0,.2);
+}
+
+.cambio.active{
+    background: orange;
+    color: #000000;
+}
+.cambio.active::after{
+    right: 0;
+    left: unset;
+}
+
+.foto{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: white;
+    
+}
+
+/* MENU ESTATICO */
+
+.contenedor {
+    position: relative;
+    max-width: 210px;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+    background: rgb(252, 251, 260);
+    margin-top: 8px;
+}
+
+body.oscuro .contenedor{
+   border: none;
+   background: rgba(49, 49, 49, 0.425);;
+}
+
+.contenedor a{
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-left: 20px; 
+}
+
+body.oscuro .contenedor a{
+    color: rgb(199, 198, 198);
+}
+
+.uno{
+    position: absolute;
+    width: 210px;
+    height: 50px;
+    background: rgba(124, 126, 126, 0.726); 
+}
+
+body.oscuro .uno{
+    background: rgba(23, 70, 141, 0.493); 
+}
+
+.dos{
+    
+    top: 80px;
+    position: absolute;
+    width: 210px;
+    height: 50px;
+}
+
+.tres{
+    top: 160px;
+    position: absolute;
+    width: 210px;
+    height: 50px;
+}
+.cuatro{
+    top: 240px;
+    position: absolute;
+    width: 210px;
+    height: 50px;
+}
+.cinco{
+    top: 330px;
+    position: absolute;
+    width: 210px;
+    height: 50px;
+}
+.seis{
+    top: 410px;
+    position: absolute;
+    width: 210px;
+    height: 50px;
+}
+.dos:hover{
+    background: rgba(124, 126, 126, 0.726);
+}
+.tres:hover{
+    background: rgba(124, 126, 126, 0.726);
+}
+.cuatro:hover{
+    background: rgba(124, 126, 126, 0.726);
+}
+.cinco:hover{
+    background: rgba(124, 126, 126, 0.726);
+}
+.seis:hover{
+    background: rgba(124, 126, 126, 0.726);
+}
+
+body.oscuro .dos:hover{
+    background: rgba(23, 70, 141, 0.493); 
+}
+
+body.oscuro .tres:hover{
+    background: rgba(23, 70, 141, 0.493); 
+}
+
+body.oscuro .cuatro:hover{
+    background: rgba(23, 70, 141, 0.493); 
+}
+
+body.oscuro .cinco:hover{
+    background: rgba(23, 70, 141, 0.493); 
+}
+
+body.oscuro .seis:hover{
+    background: rgba(23, 70, 141, 0.493); 
+}
+
+body.oscuro .dos:hover{
+    background: rgba(23, 70, 141, 0.493); 
+}
